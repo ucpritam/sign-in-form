@@ -13,93 +13,90 @@
 </head>
 
 <body>
-    <section class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-        <div
-            class="w-full md:max-w-md lg:max-w-full md:mx-auto md:mx-0 h-full px-6 lg:px-16 xl:px-12 py-8 md:py-16 lg:py-20 lg:overflow-auto">
+    <section class="mx-auto max-w-md px-6 py-12 bg-white border-0 sm:rounded-3xl">
 
-            <div class="pt-12" id="login-panel">
-                <h1 class="text-xl md:text-2xl font-bold leading-tight">Sign in</h1>
+        <div class="pt-12" id="login-panel">
+            <h1 class="text-xl md:text-2xl font-bold leading-tight">Sign in</h1>
 
-                <form class="mt-6" onsubmit="event.preventDefault()">
+            <form class="mt-6" onsubmit="event.preventDefault()">
 
-                    <div>
-                        <label for="login-username" class="block items-center text-gray-700">Username or Email
-                            address</label>
-                        <input type="text" id="login-username"
-                            class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border appearance-none focus:bg-white focus:outline-none focus:ring focus:ring-indigo-100 focus:ring-opacity-80 transition-shadow">
-                    </div>
-
-                    <div class="mt-4">
-                        <label for="login-password" class="block text-gray-700">Password</label>
-                        <input type="password" id="login-password"
-                            class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border appearance-none focus:bg-white focus:outline-none focus:ring focus:ring-indigo-100 focus:ring-opacity-80 transition-shadow">
-                    </div>
-
-                    <div class="text-right mt-2">
-                        <a href="#" class="text-sm font-semibold text-gray-700">Forgot password ?</a>
-                    </div>
-
-                    <button type="submit"
-                        class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 focus:outline-none text-white font-semibold rounded-lg px-4 py-3 mt-6">Sign
-                        in</button>
-
-                </form>
-
-                <div class="social-login">
-                    <div class="social-login-label"><span class="label-text">or connect with</span></div>
+                <div>
+                    <label for="login-username" class="block items-center text-gray-700">Username or Email
+                        address</label>
+                    <input type="text" id="login-username"
+                        class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border appearance-none focus:bg-white focus:outline-none focus:ring focus:ring-indigo-100 focus:ring-opacity-80 transition-shadow">
                 </div>
 
-                <div class="grid-container">
-                    <button type="button"
-                        class="grid-item block bg-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 mt-4">
-                        <div class="flex items-center justify-center">
-                            <svg viewBox="0 0 170 170" fill="currentColor">
-                                <title>Apple Logo</title>
-                                <path
-                                    d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.501 3.24-12.742 3.35-4.929.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.032-7.08-9.169-15.29-12.41-24.65-3.471-10.11-5.211-19.9-5.211-29.378 0-10.857 2.346-20.221 7.045-28.068 3.693-6.303 8.606-11.275 14.755-14.925s12.793-5.51 19.948-5.629c3.915 0 9.049 1.211 15.429 3.591 6.362 2.388 10.447 3.599 12.238 3.599 1.339 0 5.877-1.416 13.57-4.239 7.275-2.618 13.415-3.702 18.445-3.275 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.386-18.22 17.731-18.1 31.002.11 10.337 3.86 18.939 11.23 25.769 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.669-7.12 8.324-15.732 13.134-25.071 12.375a25.222 25.222 0 0 1-.188-3.07c0-7.778 3.386-16.102 9.399-22.908 3.002-3.446 6.82-6.311 11.45-8.597 4.62-2.252 8.99-3.497 13.1-3.71.12 1.083.17 2.166.17 3.24z" />
-                            </svg>
-
-                        </div>
-                    </button>
-
-                    <button type="button"
-                        class="grid-item block bg-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 mt-4">
-                        <div class="flex items-center justify-center">
-                            <svg viewBox="0 0 48 48">
-                                <title>Google Logo</title>
-                                <clipPath id="g">
-                                    <path
-                                        d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
-                                </clipPath>
-                                <g class="colors" clip-path="url(#g)">
-                                    <path fill="#FBBC05" d="M0 37V11l17 13z" />
-                                    <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
-                                    <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
-                                    <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
-                                </g>
-                            </svg>
-
-                        </div>
-                    </button>
-
-                    <button type="button"
-                        class="grid-item block bg-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 mt-4">
-                        <div class="flex items-center justify-center">
-                            <svg viewBox="0 0 200 200" fill="#1877F2">
-                                <title>Facebook logo</title>
-                                <path
-                                    d="M200 100a100 100 0 1 0-115.6 98.8v-69.9H59V100h25.4V78c0-25 14.9-39 37.7-39 11 0 22.4 2 22.4 2v24.6H132c-12.4 0-16.3 7.7-16.3 15.6V100h27.8l-4.5 29h-23.3v69.8A100 100 0 0 0 200 100" />
-                            </svg>
-
-                        </div>
-                    </button>
+                <div class="mt-4">
+                    <label for="login-password" class="block text-gray-700">Password</label>
+                    <input type="password" id="login-password"
+                        class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border appearance-none focus:bg-white focus:outline-none focus:ring focus:ring-indigo-100 focus:ring-opacity-80 transition-shadow">
                 </div>
 
-                <p class="mt-8">Not a member ? <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold"
-                        id="signup-link">Sign up now</a></p>
+                <div class="text-right mt-2">
+                    <a href="#" class="text-sm font-semibold text-gray-700">Forgot password ?</a>
+                </div>
+
+                <button type="submit"
+                    class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 focus:outline-none text-white font-semibold rounded-lg px-4 py-3 mt-6">Sign
+                    in</button>
+
+            </form>
+
+            <div class="social-login">
+                <div class="social-login-label"><span class="label-text">or connect with</span></div>
             </div>
 
+            <div class="grid-container">
+                <button type="button"
+                    class="grid-item block bg-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 mt-4">
+                    <div class="flex items-center justify-center">
+                        <svg viewBox="0 0 170 170" fill="currentColor">
+                            <title>Apple Logo</title>
+                            <path
+                                d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.501 3.24-12.742 3.35-4.929.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.032-7.08-9.169-15.29-12.41-24.65-3.471-10.11-5.211-19.9-5.211-29.378 0-10.857 2.346-20.221 7.045-28.068 3.693-6.303 8.606-11.275 14.755-14.925s12.793-5.51 19.948-5.629c3.915 0 9.049 1.211 15.429 3.591 6.362 2.388 10.447 3.599 12.238 3.599 1.339 0 5.877-1.416 13.57-4.239 7.275-2.618 13.415-3.702 18.445-3.275 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.386-18.22 17.731-18.1 31.002.11 10.337 3.86 18.939 11.23 25.769 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.669-7.12 8.324-15.732 13.134-25.071 12.375a25.222 25.222 0 0 1-.188-3.07c0-7.778 3.386-16.102 9.399-22.908 3.002-3.446 6.82-6.311 11.45-8.597 4.62-2.252 8.99-3.497 13.1-3.71.12 1.083.17 2.166.17 3.24z" />
+                        </svg>
+
+                    </div>
+                </button>
+
+                <button type="button"
+                    class="grid-item block bg-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 mt-4">
+                    <div class="flex items-center justify-center">
+                        <svg viewBox="0 0 48 48">
+                            <title>Google Logo</title>
+                            <clipPath id="g">
+                                <path
+                                    d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
+                            </clipPath>
+                            <g class="colors" clip-path="url(#g)">
+                                <path fill="#FBBC05" d="M0 37V11l17 13z" />
+                                <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
+                                <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
+                                <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z" />
+                            </g>
+                        </svg>
+
+                    </div>
+                </button>
+
+                <button type="button"
+                    class="grid-item block bg-white hover:bg-gray-100 focus:bg-gray-100 focus:outline-none text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300 mt-4">
+                    <div class="flex items-center justify-center">
+                        <svg viewBox="0 0 200 200" fill="#1877F2">
+                            <title>Facebook logo</title>
+                            <path
+                                d="M200 100a100 100 0 1 0-115.6 98.8v-69.9H59V100h25.4V78c0-25 14.9-39 37.7-39 11 0 22.4 2 22.4 2v24.6H132c-12.4 0-16.3 7.7-16.3 15.6V100h27.8l-4.5 29h-23.3v69.8A100 100 0 0 0 200 100" />
+                        </svg>
+
+                    </div>
+                </button>
+            </div>
+
+            <p class="mt-8">Not a member ? <a href="#" class="text-indigo-500 hover:text-indigo-700 font-semibold"
+                    id="signup-link">Sign up now</a></p>
         </div>
     </section>
 </body>
+
 </html>
