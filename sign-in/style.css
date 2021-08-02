@@ -1,0 +1,29 @@
+body {
+  font-family: "IBM Plex sans", sans-serif;
+}
+svg {
+  max-height: 20px;
+  max-width: 20px;
+}
+.social-login .social-login-label {
+  position: relative;
+  margin: 30px 0 20px;
+  color: #1f2937;
+  text-align: center;
+}
+.social-login .social-login-label:before {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  margin-top: -0.5px;
+  width: 100%;
+  border-top: 1px solid #b7c9cc;
+  content: "";
+}
+.social-login .label-text {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 30px;
+  background: #fff;
+}
